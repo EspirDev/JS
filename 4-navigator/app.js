@@ -1,4 +1,6 @@
-const x1 = 1, y1 = 2;
-const x2 = 4, y2 = 6;
-const distance = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+let addressLat = 1;
+let addressLong = 2;
+let positionLat = 4; 
+let positionLong = 6;
+const distance = Math.sqrt((positionLat - addressLat) ** 2 + (positionLong - addressLong) ** 2);
 console.log(distance);
