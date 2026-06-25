@@ -13,3 +13,11 @@ switch(true) {
         console.log('Вы робот!');
         break;
 }
+
+const res2 = prompt('Введите язык ru, en, de');
+
+const message = res2 === 'ru' ? 'Добрый день!' :
+                res2 === 'en' ? 'Good day!' :
+                res2 === 'de' ? 'Gutten tag!' : null;
+
+console.log(message || 'Вы робот!');
