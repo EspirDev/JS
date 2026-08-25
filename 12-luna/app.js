@@ -14,12 +14,12 @@ function lunaCardCheck(cardNumber) {
             checksum += item;
         }
         
-    });  return checksum % 10 === 0 ? console.log('Valid') : console.log('Invalid');
-}
+    });  return checksum % 10 === 0;
+};
 
 
-lunaCardCheck('4561 2612 1234 5464');
-lunaCardCheck('4561-2612-1234-5464');
-lunaCardCheck('4561-2612-1234-5467');
-lunaCardCheck('4561-2612-1234-5467');
+console.log(lunaCardCheck('4561 2612 1234 5464'));
+console.log(lunaCardCheck('4561-2612-1234-5464'));
+console.log(lunaCardCheck('4561-2612-1234-5467'));
+console.log(lunaCardCheck('4561-2612-1234-5467'));
 
